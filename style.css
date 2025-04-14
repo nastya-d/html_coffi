@@ -1,0 +1,152 @@
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 29px 80px;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.navigation {
+    display: flex;
+    gap: 46px;
+    padding: 8px 57px 9px 648px;  
+}
+
+.navigation_option {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 300;
+    /*margin: 6px 23px;*/
+}
+
+.image_with_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+    justify-self: center;
+    padding: 18px 675px 60px 674px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+
+.description_image {
+    justify-content: space-between;
+    width: 600px;
+    height: 400px;
+    top: 173px;
+    left: 80px;
+    padding: 0px 40px 59px 80px;
+}
+
+.des {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 110px 123px 169px 0px;
+}
+
+.cards {
+    background-color: #EFEFEF;
+    width: 1440px;
+    height: 711px;
+}
+
+.cards_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 59px 58px 65px 57px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 20px 20px 46px 20px;
+    margin: 0px 35px 0px 35px;
+}
+
+.card_title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.card_image {
+    width: 325px;
+    height: 216px;
+}
+
+.card_text {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.subscribe_block {
+    background-color:#817070;
+    width: 1440px;
+    height: 337px;
+}
+
+.link {
+    justify-self: center;
+}
+
+.str {
+    padding: 60px 639px 28px 640px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFFFF;
+
+}
+
+.email_input {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 9px 96px 16px 93px;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    justify-self: center;
+    text-align: center;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: 500;
+    color: #817070;
+    padding: 13px 34px 12px 34px;
+    border: 3px solid #FFFFFF;
+    background-color: #FFFFFF;
+    justify-self: center;
+    text-align: center;
+    margin: 28px 656px 58px 655px;
+}
+
+.footer {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 29px 646px 14px 647px;
+    background-color: #FFFFFF;
+    justify-self: center;
+    text-align: center;
+}
