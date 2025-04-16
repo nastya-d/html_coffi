@@ -19,22 +19,42 @@ body {
     color: #000000;
 }
 
-.navigation {
+.header__navigation {
     display: flex;
     gap: 46px;
     padding: 8px 57px 9px 648px;  
 }
 
-.navigation_option {
+.header__navigation-option {
     color: #000000;
     font-size: 24px;
     font-weight: 300;
-    /*margin: 6px 23px;*/
 }
 
-.image_with_text {
-    display: flex;
-    justify-content: space-between;
+.background-image {
+    background-image: url('https://s3-alpha-sig.figma.com/img/3749/67de/e55c831f25545d8abd0c41d1dc82a176?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mQctJTOrQnW1X366IzjVM33hL7aPECmO2JhCBZkBzu1kGifSlloxENy44AyatrZGfJ-HU2gghnlzq2AaLcZBAXSMi2bcxaF2ow1Fog3IvHc5DrRX51DKCRMVwJ1DvUECEgwg~pJLg5eAetJMCxmpJUJE771dJQSCDQA7tFy1-sMQyc5ASw3DCVt9ScO1ltnWD3dNQE~UJTMKD2dNQNynpX3gL3IbCDmYSscForGYafjmPcaABc62AQU8y9osb194fcN31Lnar-A-5WlBtCNhtffmJzhOYJgxIIVOm-8vRKthwrI-CugLIK0lQ2POkS8M7dryET5OU90OO6Ye-KbqrA__');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image__text {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20vw 1vh 0vw;
+    margin: 0;
+}
+
+.background-image__rectangle {
+    height: 1vh;
+    width: 8vw;
+    background-color: #817070;
+    justify-self: center;
 }
 
 .title {
@@ -50,8 +70,7 @@ body {
     justify-content: center;
 }
 
-
-.description_image {
+.description__image {
     justify-content: space-between;
     width: 600px;
     height: 400px;
@@ -60,93 +79,109 @@ body {
     padding: 0px 40px 59px 80px;
 }
 
-.des {
+.description__text {
     font-size: 20px;
     font-weight: 300;
-    padding: 110px 123px 169px 0px;
+    padding: 50px;
 }
 
 .cards {
     background-color: #EFEFEF;
-    width: 1440px;
-    height: 711px;
+
 }
 
-.cards_group {
+.cards__group {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 59px 58px 65px 57px;
+    padding: 0px 58px 65px 57px;
 }
 
-.card {
+.cards__card {
     background-color: #FFFFFF;
     padding: 20px 20px 46px 20px;
     margin: 0px 35px 0px 35px;
+    justify-items: center;
 }
 
-.card_title {
+.cards__title {
     font-size: 24px;
     font-weight: 400;
     color: #000000;
 }
 
-.card_image {
+.cards__image {
     width: 325px;
     height: 216px;
 }
 
-.card_text {
+.cards__text {
     font-size: 18px;
     font-weight: 300;
     text-align: justify;
 }
 
-.subscribe_block {
+.subscribe-block {
     background-color:#817070;
-    width: 1440px;
-    height: 337px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
-.link {
-    justify-self: center;
-}
-
-.str {
-    padding: 60px 639px 28px 640px;
+.subscribe-block__title {
+    padding: 15px;
+    text-align: center;
     font-size: 36px;
     font-weight: 500;
     color: #FFFFFF;
-
 }
 
-.email_input {
+.subscribe-block__email-input {
     font-size: 20px;
     font-weight: 300;
-    padding: 9px 96px 16px 93px;
+    margin: 1vw 67vh;
+    padding: 20px;
     color: #FFFFFF;
     border: 3px solid #FFFFFF;
-    justify-self: center;
+    
     text-align: center;
 }
 
-.button {
+.subscribe-block__button {
     font-size: 20px;
     font-weight: 500;
     color: #817070;
-    padding: 13px 34px 12px 34px;
+    margin: 1vw 67vh;
     border: 3px solid #FFFFFF;
     background-color: #FFFFFF;
-    justify-self: center;
+    padding: 20px;
     text-align: center;
-    margin: 28px 656px 58px 655px;
 }
 
 .footer {
     font-size: 20px;
     font-weight: 300;
-    padding: 29px 646px 14px 647px;
+    padding: 14px;
     background-color: #FFFFFF;
     justify-self: center;
-    text-align: center;
+}
+
+@media screen and (max-width: 1300px){
+    .cards_group {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .description {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .des {
+        text-align: center;
+    }
 }
